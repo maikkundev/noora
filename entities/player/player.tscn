@@ -1,22 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://qhewbw37x3ku"]
+[gd_scene load_steps=6 format=3 uid="uid://qhewbw37x3ku"]
 
-[ext_resource type="Texture2D" uid="uid://bupnbiw5bjjsn" path="res://icon.svg" id="1_1338s"]
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_gd8ri"]
-[ext_resource type="Resource" path="res://entities/player/player.entity-type.tres" id="2_tsobq"]
+[ext_resource type="Resource" uid="uid://dwvxnldall4co" path="res://entities/player/player.entity-type.tres" id="2_tsobq"]
+[ext_resource type="Texture2D" uid="uid://x7c4rp5dlef3" path="res://utils/Player.png" id="3_hr8by"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_gbrs5"]
-radius = 62.3656
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lwkm"]
+atlas = ExtResource("3_hr8by")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8ms0"]
+size = Vector2(66.6667, 64.5161)
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(0.93, 0.93)
 script = ExtResource("1_gd8ri")
 base_speed = 15.0
 entity_type = ExtResource("2_tsobq")
 
 [node name="Sprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_1338s")
-offset = Vector2(0, -64)
+texture = SubResource("AtlasTexture_0lwkm")
+offset = Vector2(0, -32)
 
 [node name="Collider" type="CollisionShape2D" parent="."]
-position = Vector2(0, -62)
-shape = SubResource("CircleShape2D_gbrs5")
+position = Vector2(1.21773e-06, -32.2581)
+shape = SubResource("RectangleShape2D_u8ms0")
