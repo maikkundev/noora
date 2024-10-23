@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EntityType" load_steps=2 format=3 uid="uid://dwvxnldall4co"]
+
+[ext_resource type="Script" path="res://entities/entity-type.gd" id="1_p5gto"]
+
+[resource]
+script = ExtResource("1_p5gto")
+name = "Player"
+max_health = 10
+base_defense = 5
+base_speed = 500.0
+base_acceleration = 2.0
