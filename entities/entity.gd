@@ -2,6 +2,18 @@
 class_name Entity
 extends CharacterBody2D
 
+@onready var sprite = $Sprite
+
+@onready var collider = $Collider
+
+@export_group("Stats")
+
+@export var health: float
+
+@export var defense: float
+
+@export_group("Movement")
+
 @export var base_speed: float
 
 ## The type of entity this is.
@@ -12,4 +24,6 @@ func get_entity_type() -> EntityType:
 	return entity_type
 
 func _ready():
+	health = entity_type.max_health
+	defense = entity_type.base_defense
 	base_speed = entity_type.base_speed
