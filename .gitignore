@@ -102,3 +102,6 @@ Temporary Items
 
 build/
 *.tmp
+
+# vscode settings
+.vscode
