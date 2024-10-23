@@ -6,6 +6,13 @@ enum State {
 	IDLE, MOVE, ATTACK, TAKE_DAMAGE, DEATH
 }
 
+# preload atlases 
+var sprite_attack = preload("res://entities/player/sprites/sprite_attack_atlas.tres")
+var sprite_idle = preload("res://entities/player/sprites/sprite_idle_atlas.tres")
+var sprite_damage = preload("res://entities/player/sprites/sprite_damage_atlas.tres")
+var sprite_move = preload("res://entities/player/sprites/sprite_move_atlas.tres")
+var sprite_death = preload("res://entities/player/sprites/sprite_death_atlas.tres")
+
 ## The player's initial state, and its setter function.
 var state: State = State.IDLE: set = transition
 
@@ -28,9 +35,19 @@ func transition(to: int):
 	
 	# update local state
 	state = to as State
-	
-	# TODO: update player sprite
-	# match state:
+
+	# update player sprite
+	match state:
+		State.IDLE:
+				sprite.texture = sprite_idle
+		State.MOVE:
+				sprite.texture = sprite_move
+		State.ATTACK:
+				sprite.texture = sprite_attack
+		State.TAKE_DAMAGE:
+				sprite.texture = sprite_damage
+		State.DEATH:
+				sprite.texture = sprite_death
 
 func _process(_delta: float):
 	var direction = Input.get_vector("MoveLeft", "MoveRight", "MoveUp", "MoveDown").normalized()
