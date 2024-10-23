@@ -1,6 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
-<<<<<<< Updated upstream
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -103,6 +102,6 @@ Temporary Items
 
 build/
 *.tmp
-=======
-/android/
->>>>>>> Stashed changes
+
+# vscode settings
+.vscode
