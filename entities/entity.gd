@@ -29,3 +29,4 @@ func _ready():
 	health = entity_type.max_health
 	defense = entity_type.base_defense
 	base_speed = entity_type.base_speed
+	base_deceleration = entity_type.base_deceleration
