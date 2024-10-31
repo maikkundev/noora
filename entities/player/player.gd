@@ -61,8 +61,12 @@ func _process(_delta: float):
 			if !direction:
 				state = State.IDLE
 			else:
-				velocity.x = lerp(velocity.x, base_speed * direction.x, 0.1)
-				velocity.y = lerp(velocity.y, base_speed * direction.y, 0.1)
+				if Input.is_action_pressed("Attack"):
+					velocity.x = lerp(velocity.x, base_speed * direction.x * base_deceleration, 0.1)
+					velocity.y = lerp(velocity.y, base_speed * direction.y * base_deceleration, 0.1)
+				else:
+					velocity.x = lerp(velocity.x, base_speed * direction.x, 0.1)
+					velocity.y = lerp(velocity.y, base_speed * direction.y, 0.1)
 		
 				
 		_: pass
