@@ -3,7 +3,7 @@ extends Entity
 
 ## The player state.
 enum State {
-	IDLE, MOVE, ATTACK, TAKE_DAMAGE, DEATH
+	IDLE, MOVE, TAKE_DAMAGE, DEATH
 }
 
 # preload atlases 
@@ -42,8 +42,6 @@ func transition(to: int):
 				sprite.texture = sprite_idle
 		State.MOVE:
 				sprite.texture = sprite_move
-		State.ATTACK:
-				sprite.texture = sprite_attack
 		State.TAKE_DAMAGE:
 				sprite.texture = sprite_damage
 		State.DEATH:
