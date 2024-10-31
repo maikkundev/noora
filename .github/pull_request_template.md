@@ -1,13 +1,3 @@
-# FEATURE_NAME
+# Resolves
 
-## ISSUES_IT_RESOLVES
-
-- [ ] Issue 1
-- [ ] Issue 2
-- [ ] Issue 3
-
-## TASK_LIST
-
-- [ ] Task 1
-- [ ] Task 2
-- [ ] Task 3
+This pull request resolves issue #.

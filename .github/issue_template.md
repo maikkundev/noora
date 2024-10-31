@@ -1,6 +1,8 @@
-# ISSUE_NAME
+# Feature
 
-## TASK_LIST
+This issue describes the necessary changes to implement featue `feature_name`.
+
+## Tasks
 
 - [ ] Task 1
 - [ ] Task 2
