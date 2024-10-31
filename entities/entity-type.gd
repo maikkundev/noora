@@ -21,10 +21,10 @@ extends Resource
 @export var base_speed: float
 
 ## The entity's base acceleration.
-@export var base_acceleration: float
+@export var base_deceleration: float
 
-func _init(p_max_health = 100, p_defense = 10, p_speed = 100.0, p_acceleration = 500.0):
+func _init(p_max_health = 100, p_defense = 10, p_speed = 100.0, p_deceleration = 0.5):
 	max_health = p_max_health
 	base_defense = p_defense
 	base_speed = p_speed
-	base_acceleration = p_acceleration
+	base_deceleration = p_deceleration
