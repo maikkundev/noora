@@ -16,6 +16,8 @@ extends CharacterBody2D
 
 @export var base_speed: float
 
+@export var base_deceleration: float
+
 ## The type of entity this is.
 @export var entity_type: EntityType
 
