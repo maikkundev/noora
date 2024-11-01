@@ -3,14 +3,14 @@ extends Entity
 
 ## The player state.
 enum State {
-	IDLE, MOVE, TAKE_DAMAGE, DEATH
+	IDLE, MOVE, MOVE_AND_ATTACK, ATTACK, TAKE_DAMAGE, DEATH
 }
 
-# preload atlases 
-var sprite_attack = preload("res://entities/player/sprites/sprite_attack_atlas.tres")
+# Preload player sprites
 var sprite_idle = preload("res://entities/player/sprites/sprite_idle_atlas.tres")
-var sprite_damage = preload("res://entities/player/sprites/sprite_damage_atlas.tres")
 var sprite_move = preload("res://entities/player/sprites/sprite_move_atlas.tres")
+var sprite_attack = preload("res://entities/player/sprites/sprite_attack_atlas.tres")
+var sprite_damage = preload("res://entities/player/sprites/sprite_damage_atlas.tres")
 var sprite_death = preload("res://entities/player/sprites/sprite_death_atlas.tres")
 
 ## The player's initial state, and its setter function.
