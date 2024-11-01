@@ -2,20 +2,26 @@
 class_name Entity
 extends CharacterBody2D
 
+## The entity's sprite.
 @onready var sprite = $Sprite
 
+## The entity's collider.
 @onready var collider = $Collider
 
 @export_group("Stats")
 
+## The entity's current health.
 @export var health: float
 
+## The entity's defense.
 @export var defense: float
 
 @export_group("Movement")
 
+## The entity's base speed.
 @export var base_speed: float
 
+## The entity's base deceleration.
 @export var base_deceleration: float
 
 ## The type of entity this is.

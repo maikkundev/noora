@@ -20,7 +20,7 @@ extends Resource
 ## The entity's base movement speed.
 @export var base_speed: float
 
-## The entity's base acceleration.
+## The entity's base deceleration.
 @export var base_deceleration: float
 
 func _init(p_max_health = 100, p_defense = 10, p_speed = 100.0, p_deceleration = 0.5):
