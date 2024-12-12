@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=2 format=3 uid="uid://bwvx3vjyq4dl7"]
+
+[ext_resource type="Script" path="res://entities/weapons/weapon.gd" id="1_d86bl"]
+
+[resource]
+script = ExtResource("1_d86bl")
+health = 0.0
+defense = 0.0
+base_speed = 0.0
+base_deceleration = 0.0
