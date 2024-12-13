@@ -8,4 +8,4 @@ name = "Player"
 max_health = 10
 base_defense = 5
 base_speed = 500.0
-base_acceleration = 2.0
+base_deceleration = 0.0
