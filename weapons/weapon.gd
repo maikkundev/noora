@@ -1,5 +1,5 @@
 class_name Weapon
-extends Entity
+extends WeaponType
 
 # The weapon's state
 enum State {
