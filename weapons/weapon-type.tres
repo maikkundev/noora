@@ -4,3 +4,6 @@
 
 [resource]
 script = ExtResource("1_rlu3q")
+name = ""
+attack_speed = 0.0
+damage = 0
