@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EntityType" load_steps=2 format=3 uid="uid://dfr08n80t7nls"]
+
+[ext_resource type="Script" path="res://entities/entity-type.gd" id="1_dkcpu"]
+
+[resource]
+script = ExtResource("1_dkcpu")
+name = ""
+max_health = 0
+base_defense = 0
+base_speed = 0.0
+base_deceleration = 0.0
