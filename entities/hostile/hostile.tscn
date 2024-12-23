@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://sva4garwsl26"]
+[gd_scene load_steps=4 format=3 uid="uid://sva4garwsl26"]
 
 [ext_resource type="Script" path="res://entities/hostile/hostile.gd" id="1_8yccq"]
 [ext_resource type="Resource" uid="uid://b2l2gvqflgqtr" path="res://entities/hostile/hostile.entity-type.tres" id="2_6gli4"]
 
-[node name="Hostile" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dw7mj"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_8yccq")
 entity_type = ExtResource("2_6gli4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dw7mj")
