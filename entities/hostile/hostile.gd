@@ -47,3 +47,14 @@ func transition(to: int):
 	# 			sprite.texture = sprite_attack
 	# 	State.MOVE_AND_ATTACK:
 	# 			sprite.texture = sprite_move_attack
+
+func get_dir_to_player() -> Vector2:
+	var player_node = get_tree().get_first_node_in_group("player") as Node2D
+	if player_node != null:
+		return (player_node.global_position - global_position).normalized()
+	return Vector2.ZERO
+
+func _process(_delta: float) -> void:
+	var player_dir = get_dir_to_player()
+	velocity = player_dir * base_speed
+	move_and_slide()
