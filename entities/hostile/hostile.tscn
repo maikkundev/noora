@@ -1,16 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://sva4garwsl26"]
+[gd_scene load_steps=5 format=3 uid="uid://sva4garwsl26"]
 
 [ext_resource type="Script" path="res://entities/hostile/hostile.gd" id="1_8yccq"]
 [ext_resource type="Resource" uid="uid://b2l2gvqflgqtr" path="res://entities/hostile/hostile.entity-type.tres" id="2_6gli4"]
+[ext_resource type="Texture2D" uid="uid://w7fjvfccwp7q" path="res://entities/hostile/sprites/sprite_move_atlas.tres" id="3_gjm4l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dw7mj"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Hostile" type="CharacterBody2D"]
 collision_layer = 0
 script = ExtResource("1_8yccq")
 entity_type = ExtResource("2_6gli4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_gjm4l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dw7mj")
