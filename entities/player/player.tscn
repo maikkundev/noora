@@ -11,7 +11,7 @@ region = Rect2(0, 0, 64, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8ms0"]
 size = Vector2(66, 65)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_gd8ri")
 base_speed = 15.0
 entity_type = ExtResource("2_tsobq")
