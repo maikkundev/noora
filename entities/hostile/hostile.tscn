@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dw7mj"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 0
 script = ExtResource("1_8yccq")
 entity_type = ExtResource("2_6gli4")
 
